@@ -3,7 +3,6 @@
     let counter = 0;
     const rows = [0, 1, 2];
     const cols = [0, 1, 2];
-    let winner = null;
     let turn = "X";
     function checkGameOver(grid) {
         counter = counter + 1;
