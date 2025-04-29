@@ -91,11 +91,6 @@
     }
 </script>
 
-<h1
-    class="text-4xl font-extrabold absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-0"
->
-    Tic-Tac-Toe
-</h1>
 <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-3 gap-0 m-0"
 >
@@ -104,7 +99,7 @@
             <!-- svelte-ignore a11y_consider_explicit_label -->
             <button
                 on:click={(e) => buttonFunction(e, row, col)}
-                class="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 w-24 h-24 m-0 p-2 text-4xl shadow-md"
+                class="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 w-[15vw] h-[15vw] m-0 p-2 text-4xl shadow-md"
                 id="{row}{col}"
             >
             </button>
