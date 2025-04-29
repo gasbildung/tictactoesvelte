@@ -92,12 +92,12 @@
 </script>
 
 <h1
-    class="text-4xl font-extrabold absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+    class="text-4xl font-extrabold absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-0"
 >
     Tic-Tac-Toe
 </h1>
 <div
-    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-3 gap-0"
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-3 gap-0 m-0"
 >
     {#each rows as row}
         {#each cols as col}
