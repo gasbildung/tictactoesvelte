@@ -91,6 +91,10 @@
     }
 </script>
 
+<div class="flex justify-center items-center">
+    <h1 class="text-white text-5xl">Tic Tac Toe</h1>
+</div>
+
 <div
     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 grid grid-cols-3 gap-0 m-0"
 >
