@@ -77,16 +77,25 @@
         return /^\s*$/.test(str);
     }
     function buttonFunction(event, row, col) {
-        if (isBlank(event.target.innerText)) {
+        if (grid[row][col] == undefined) {
             event.target.innerText = turn;
             grid[row][col] = turn;
-            console.log(row, col, grid[row][col], counter);
             checkGameOver(grid);
             if (turn == "X") {
                 turn = "O";
             } else {
                 turn = "X";
             }
+        }
+    }
+    function hoverFunction(event, row, col) {
+        if (isBlank(event.target.innerText)) {
+            event.target.innerText = turn;
+        }
+    }
+    function hoverOutFunction(event, row, col) {
+        if (grid[row][col] == undefined) {
+            event.target.innerText = null;
         }
     }
 </script>
@@ -103,6 +112,8 @@
             <!-- svelte-ignore a11y_consider_explicit_label -->
             <button
                 on:click={(e) => buttonFunction(e, row, col)}
+                on:mouseover={(e) => hoverFunction(e, row, col)}
+                on:mouseout={(e) => hoverOutFunction(e, row, col)}
                 class="bg-white/20 backdrop-blur-md border border-white/30 text-white hover:bg-white/30 w-[15vw] h-[15vw] m-0 p-2 text-4xl shadow-md"
                 id="{row}{col}"
             >
